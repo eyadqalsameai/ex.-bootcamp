@@ -1,0 +1,5 @@
+[2026-11-05 08:15:00] User admin login SUCCESS
+[2026-11-05 08:20:12] User root login FAILED from IP 192.168.1.50
+[2026-11-05 08:25:33] User guest login SUCCESS 404
+[2026-11-05 08:30:45] User admin access denied - FAILED attempt
+[2026-11-05 08:35:00] System update SUCCESS
