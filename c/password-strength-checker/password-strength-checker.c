@@ -76,7 +76,7 @@ int main()
 	char password[24] = "";
 	printf("Enter the password: ");
 
-	fgets(password, sizeof(password), stdin);
+	scanf("%s", password);
 
 	checker_strength_password(password);
 
