@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-XSS</title>
+</head>
+<body>
+    <input id="userInput">
+    <button id="btnInsecure">Insecure Display</button>
+    <button id="btnSecure">Secure Display</button>
+    <h1 id="outputArea"></h1>
+    <script>
+        function insecureDisplay(){
+            inputValue = document.getElementById('userInput').value
+            document.getElementById('outputArea').innerHTML=inputValue
+        }
+        function secureDisplay(){
+            inputValue = document.getElementById('userInput').value
+            document.getElementById('outputArea').textContent=inputValue
+        }
+        document.getElementById('btnInsecure').addEventListener('click',insecureDisplay)
+        document.getElementById('btnSecure').addEventListener('click',secureDisplay)
+    </script>
+</body>
+</html>
