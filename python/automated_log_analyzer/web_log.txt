@@ -1,0 +1,6 @@
+[INFO] 192.168.1.10 - GET /index.html 200 OK
+[WARN] 10.0.0.5 - GET /login.php?user=admin' uNiOn SeLeCt 1,2,3-- 403 Forbidden
+[INFO] 192.168.1.15 - GET /about.html 200 OK
+[ERROR] 172.16.0.8 - GET /download.php?file=../../../../etc/passwd 404 Not Found
+[INFO] 10.0.0.2 - GET /images/logo.png 200 OK
+[WARN] 192.168.1.100 - POST /search.php?q=UNION ALL SELECT null, null-- 403 Forbidden
