@@ -4,8 +4,11 @@ import time
 def calculate_file_hash(filepath):
     hasher = hashlib.sha256()
     with open(filepath, 'rb') as file:
-        file_data = file.read()
-        hasher.update(file_data)
+        while True:
+            chunk = file.read(4096)
+            if not chunk:
+                break
+            hasher.update(chunk)
     return hasher.hexdigest()
 
 target_file = "test_fim.txt"
